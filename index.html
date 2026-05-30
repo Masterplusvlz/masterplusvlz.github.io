@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Title -->
+    <title>Мастер+ Остеопат Волжский | Мануальная терапия, лечение позвоночника и суставов | Костоправ</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Мастер+ в Волжском - остеопат, костоправ, мануальный терапевт. Лечение позвоночника, спины, суставов, грыж, протрузий, головных болей. Иглоукалывание, массаж 50+ видов. Тел: +7 (961) 684-59-44">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="остеопат Волжский, костоправ Волжский, мануальная терапия, лечение позвоночника, лечение спины, боли в спине, мануальщик, лечение суставов, лечение грыж, протрузии, лечение головных болей, лечение рук, массаж Волжский, иглоукалывание, Мастер+ Волжский, мануальный терапевт, лечение остеохондроза, вправление позвонков">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Мастер+ Остеопат Волжский | Лечение позвоночника и суставов">
+    <meta property="og:description" content="Профессиональное лечение спины, позвоночника, суставов. Остеопатия, мануальная терапия, массаж. Работаю с 2001 года.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://master-plus-volzhsky.ru">
+    <meta property="og:image" content="https://iili.io/C2yHnRt.md.jpg">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://master-plus-volzhsky.ru">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Author -->
+    <meta name="author" content="Мастер+ Остеопат">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #f0f2f5; 
+            color: #333; 
+            line-height: 1.6; 
+        }
+        a { text-decoration: none; color: inherit; }
+
+        header { 
+            background: #004d40; 
+            padding: 18px 20px; 
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+        .logo { 
+            font-size: 40px; 
+            font-weight: 900; 
+            color: #fff; 
+            text-transform: uppercase; 
+            letter-spacing: 3px;
+        }
+        .header-sub { color: #b2dfdb; font-size: 14px; margin-top: 4px; }
+        .header-phone {
+            display: block;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+        .header-phone:hover { color: #b2dfdb; }
+
+        .hero { 
+            max-width: 1100px; 
+            margin: 30px auto; 
+            background: #fff; 
+            padding: 40px; 
+            border-radius: 15px; 
+            display: flex; 
+            align-items: center; 
+            gap: 40px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .hero-photo { flex: 0 0 320px; }
+        .hero-photo img { 
+            width: 100%; 
+            height: 420px; 
+            object-fit: cover; 
+            object-position: top center;
+            border-radius: 15px; 
+            box-shadow: 0 10px 25px rgba(0,137,123, 0.15);
+            background: #e0e0e0;
+            display: block;
+        }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 36px; line-height: 1.2; margin-bottom: 10px; color: #222; }
+        .hero-text h2 { font-size: 18px; color: #00897b; margin-bottom: 18px; font-weight: 600; }
+        .hero-text p { color: #555; margin-bottom: 25px; font-size: 15px; }
+        .btn { 
+            display: inline-block; 
+            background: #00897b; 
+            color: #fff; 
+            padding: 14px 32px; 
+            border-radius: 50px; 
+            font-weight: 600; 
+            transition: 0.3s; 
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .btn:hover { background: #00695c; transform: translateY(-2px); }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        .title { text-align: center; font-size: 30px; margin-bottom: 35px; color: #222; }
+
+        .single-photo {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .single-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+        .card { background: #fff; padding: 28px 22px; border-radius: 12px; text-align: center; box-shadow: 0 3px 12px rgba(0,0,0,0.04); }
+        .card h3 { color: #00897b; margin-bottom: 8px; font-size: 17px; }
+        .card p { font-size: 13px; color: #666; }
+
+        .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 35px; }
+        .tag { background: #e0f2f1; color: #00695c; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; }
+        .tag.main { background: #00897b; color: #fff; }
+
+        .contact-section { 
+            background: #fff; 
+            padding: 35px; 
+            border-radius: 15px; 
+            margin: 40px auto; 
+            max-width: 1100px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+        }
+        .contact-text { flex: 1; min-width: 280px; }
+        .contact-text h3 { font-size: 22px; margin-bottom: 18px; }
+        .contact-row { margin-bottom: 14px; font-size: 15px; }
+        .contact-row strong { color: #00897b; display: block; margin-bottom: 3px; }
+        
+        .map-container { flex: 1; min-width: 280px; height: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #eee; }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+
+        footer { 
+            text-align: center; 
+            padding: 25px; 
+            color: #b2dfdb; 
+            font-size: 13px; 
+            background: #004d40;
+        }
+        footer a { color: #fff; font-weight: 600; }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal {
+            background: #fff;
+            border-radius: 15px;
+            padding: 35px;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            animation: modalSlide 0.3s ease;
+        }
+        @keyframes modalSlide {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            color: #999;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .modal-close:hover { color: #333; }
+        .modal h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #222;
+            text-align: center;
+        }
+        .modal-text {
+            text-align: center;
+            color: #555;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+        .modal-contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .modal-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        .modal-btn-call {
+            background: #00897b;
+            color: #fff;
+        }
+        .modal-btn-call:hover { background: #00695c; }
+        .modal-btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
+        .modal-btn-whatsapp:hover { background: #128C7E; }
+        .modal-btn-tel {
+            background: #0088cc;
+            color: #fff;
+        }
+        .modal-btn-tel:hover { background: #006699; }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding: 25px; }
+            .hero-photo { flex: auto; width: 100%; max-width: 320px; margin: 0 auto; }
+            .hero-photo img { height: 320px; object-position: 50% 20%; }
+            .single-photo img { max-width: 90%; }
+            .contact-section { flex-direction: column; }
+            .map-container { height: 280px; }
+            .modal { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">МАСТЕР+</div>
+    <div class="header-sub">Остеопат · Костоправ · Волжский</div>
+    <a href="tel:+79616845944" class="header-phone">+7 (961) 684-59-44</a>
+</header>
+
+<section class="hero">
+    <div class="hero-photo">
+        <img src="https://iili.io/C2yHnRt.md.jpg" alt="Остеопат костоправ Волжский - Мастер+" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%; height:420px; background:linear-gradient(135deg, #00897b 0%, #004d40 100%); border-radius:15px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:18px;\'>📷 Мастер+ Остеопат</div>'">
+    </div>
+    <div class="hero-text">
+        <h1>Лечение позвоночника</h1>
+        <h2>Остеопат · Костоправ · Мануальный терапевт</h2>
+        <p>Здравствуйте! Я помогаю избавиться от боли в спине, суставах и головных болей без операций. Работаю с 2001 года, индивидуальный подход к каждому пациенту. Более 50 методик восстановления.</p>
+        <button class="btn" onclick="openModal()">Записаться на приём</button>
+    </div>
+</section>
+
+<div class="container">
+    <h2 class="title">Фото кабинета</h2>
+    <div class="single-photo">
+        <img src="https://iili.io/C2y9kP4.md.jpg" alt="Кабинет остеопата костоправа Волжский" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'max-width:700px; height:400px; margin:0 auto; background:linear-gradient(135deg, #e0e0e0 0%, #bdbdbd 100%); border-radius:12px; display:flex; align-items:center; justify-content:center; color:#757575; font-size:16px; box-shadow:0 5px 20px rgba(0,0,0,0.1);\'>📷 Кабинет Мастер+</div>'">
+    </div>
+
+    <h2 class="title">Чем я могу помочь</h2>
+    <div class="services-grid">
+        <div class="card">
+            <h3>🦴 Лечение спины</h3>
+            <p>Грыжи, протрузии, остеохондроз, смещения, боли в пояснице и шее.</p>
+        </div>
+        <div class="card">
+            <h3>👐 Суставы и кости</h3>
+            <p>Болезни рук и ног, артриты, артрозы, восстановление подвижности.</p>
+        </div>
+        <div class="card">
+            <h3>📍 Иглоукалывание</h3>
+            <p>Снятие острой боли, улучшение кровообращения, лечение защемлений.</p>
+        </div>
+        <div class="card">
+            <h3>💆 Массаж (50+ видов)</h3>
+            <p>Классический, лечебный, точечный, расслабляющий — подберу под вашу задачу.</p>
+        </div>
+        <div class="card">
+            <h3>🤕 Головные боли</h3>
+            <p>Лечение причин головокружения, давления, мигреней, ВСД.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Мануальная терапия</h3>
+            <p>Вправление позвонков, снятие блоков, работа с мышцами и связками.</p>
+        </div>
+    </div>
+
+    <div class="tags">
+        <span class="tag main">Лечение спины</span>
+        <span class="tag main">Лечение суставов</span>
+        <span class="tag">Головокружение</span>
+        <span class="tag">Давление</span>
+        <span class="tag">Онемение рук</span>
+        <span class="tag">Боли в ногах</span>
+        <span class="tag">Сколиоз</span>
+        <span class="tag">Радикулит</span>
+    </div>
+</div>
+
+<section class="contact-section">
+    <div class="contact-text">
+        <h3>Контакты</h3>
+        <div class="contact-row">
+            <strong>Адрес:</strong>
+            г. Волжский, ул. Мира, 33
+        </div>
+        <div class="contact-row">
+            <strong>Телефон:</strong>
+            <a href="tel:+79616845944" style="color:#00897b; font-weight:bold; font-size:18px;">+7 (961) 684-59-44</a>
+        </div>
+        <div class="contact-row">
+            <strong>Режим работы:</strong>
+            Ежедневно: 9:00 — 20:00
+        </div>
+        <br>
+        <button class="btn" onclick="openModal()" style="width: 100%; text-align: center;">Записаться на приём</button>
+    </div>
+    <div class="map-container">
+        <iframe src="https://yandex.ru/map-widget/v1/?org_id=130342379059&ll=44.798827%2C48.777101&z=15&pt=44.798827%2C48.777101%2Cpm2rdm" allowfullscreen></iframe>
+    </div>
+</section>
+
+<footer>
+    © 2026 <strong>МАСТЕР+</strong> | Остеопат, Костоправ в г. Волжский<br>
+    ул. Мира, 33 | <a href="tel:+79616845944">+7 (961) 684-59-44</a><br>
+    <small>Ежедневно 9:00 — 20:00</small><br><br>
+    <small>Имеются противопоказания, необходима консультация специалиста</small>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+    <div class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <h3>📝 Запись на приём</h3>
+        <p class="modal-text">
+            Выберите удобный способ связи для записи:<br>
+            или позвоните прямо сейчас
+        </p>
+        <div class="modal-contacts">
+            <a href="tel:+79616845944" class="modal-btn modal-btn-call">
+                📞 Позвонить: +7 (961) 684-59-44
+            </a>
+            <a href="https://wa.me/79616845944" target="_blank" class="modal-btn modal-btn-whatsapp">
+                💬 Написать в WhatsApp
+            </a>
+            <a href="https://t.me/+79616845944" target="_blank" class="modal-btn modal-btn-tel">
+                ✈️ Написать в Telegram
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 20px; color: #888; font-size: 13px;">
+            Работаю ежедневно с 9:00 до 20:00
+        </p>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById('modalOverlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal() {
+        document.getElementById('modalOverlay').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    function closeModalOnOverlay(event) {
+        if (event.target === document.getElementById('modalOverlay')) {
+            closeModal();
+        }
+    }
+    
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+</script>
+
+</body>
+</html>
